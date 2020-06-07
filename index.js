@@ -1,32 +1,18 @@
-alert("hello1");
-// var root = $(":root");
-// var topbg = $(".top-container");
-// var darkMode = true;
-//
-// root.css("--bg-color", "white");
-//
-// topbg.css("background-color","yellow");
+//jshint esversion:6
+var root = $(":root");
 
-alert("hello2");
-document.getElementsByClassName("top-container")[0].style.backgroundColor = "red";
-$(".top-container").css("background-color","yellow");
-alert("hello3");
-// root.css('--top-color', "hsl(225, 100%, 98%)");
-// root.css("--head-color", "hsl(230, 17%, 14%)");
-// root.css("--text-color", "hsl(228, 12%, 44%)");
-// root.css("--card-bg", "hsl(227, 47%, 96%)");
+// $(document).ready(function() {
+//   $("button").on('click tap touchstart', function() {
+//     alert('Click');
+//   });
+// });
 
-
-$(document).ready(function() {
-  $("button").on('click tap touchstart', function() {
-    alert('Click');
-  });
-});
-
-$(document).on("click", "button[name='mode-button']", function() {
-  // var checked = $("input").prop("checked");
+// $(document).on("click", "button[name='mode-button']", function() {
+$(".switch").change(function(){
+  alert("hello");
+  var checked = $("input").prop("checked");
   //light theme
-  if (darkMode === true) {
+  if (checked === true) {
     alert("darkMode");
     root.css("--bg-color", "white");
     root.css('--top-color', "hsl(225, 100%, 98%)");
@@ -44,4 +30,7 @@ $(document).on("click", "button[name='mode-button']", function() {
     root.css("--card-bg", "hsl(228, 28%, 20%)");
     darkMode = true;
   }
+
 });
+
+// });

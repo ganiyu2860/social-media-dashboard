@@ -6,10 +6,6 @@
   --card-bg: hsl(228, 28%, 20%);
   --small-size : 0.3rem;
 }
-button {
-  cursor: pointer;
-}
-
 
 .big-heading {
   font-size: 28px;
@@ -60,7 +56,7 @@ hr {
 }
 
 .switch input {
-  /* opacity: 0; */
+  opacity: 0;
   width: 10px;
   height: 10px;
 }
