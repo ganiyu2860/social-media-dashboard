@@ -4,7 +4,7 @@ var root = $(":root");
 var darkMode = true;
 
 $(document).ready(function() {
-  $("button").on('click', function() {
+  $("button").on('click touchstart', function() {
     alert('Click');
   });
 });
