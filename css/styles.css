@@ -1,9 +1,9 @@
 :root {
   --bg-color: hsl(230, 17%, 14%);
   --top-color: hsl(232, 19%, 15%);
-  --head-color:white;
-  --text-color:hsl(228, 34%, 66%);
-  --card-bg:hsl(228, 28%, 20%);
+  --head-color: white;
+  --text-color: hsl(228, 34%, 66%);
+  --card-bg: hsl(228, 28%, 20%);
 }
 
 .big-heading {
@@ -17,7 +17,7 @@ body {
   color: var(--text-color);
 }
 
-hr{
+hr {
   visibility: hidden;
 }
 
@@ -31,18 +31,18 @@ hr{
   padding: 0 0 4rem 0;
 }
 
-.mode-div{
+.mode-div {
   padding: 12px 0 0 0;
   text-align: right;
   margin-left: 0;
   margin-right: 0;
 }
 
-.mode-text{
+.mode-text {
   padding: 3px 0 0 0;
 }
 
-.mode-ticker{
+.mode-ticker {
   text-align: right;
   padding-right: 0;
 }
@@ -67,7 +67,7 @@ hr{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -84,12 +84,12 @@ hr{
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-image: none;
   background-color: hsl(230, 22%, 74%);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(45px);
   -ms-transform: translateX(45px);
   transform: translateX(45px);
@@ -114,36 +114,36 @@ input:checked + .slider:before {
   padding-right: 10%;
   position: absolute;
   z-index: 100;
-  top:-6rem;
-  right:0;
+  top: -6rem;
+  right: 0;
   left: 0;
 }
 
-.card-div{
+.card-div {
   padding: 0 15px;
   height: 12rem;
 }
 
-.back-card{
+.back-card {
   border: 0;
-  height:12.3rem;
+  height: 12.3rem;
   position: relative;
   border-radius: 0.5rem;
 }
 
-.back-card.facebook{
-  background-color:  hsl(208, 92%, 53%);
+.back-card.facebook {
+  background-color: hsl(208, 92%, 53%);
 }
 
-.back-card.twitter{
+.back-card.twitter {
   background-color: hsl(203, 89%, 53%);
 }
 
-.back-card.instagram{
-  background-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+.back-card.instagram {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
 
-.back-card.youtube{
+.back-card.youtube {
   background-color: hsl(348, 97%, 39%);
 }
 
@@ -159,7 +159,7 @@ input:checked + .slider:before {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.logo-div{
+.logo-div {
   margin: 0.8rem 0;
 }
 
@@ -169,7 +169,7 @@ input:checked + .slider:before {
   display: inline;
 }
 
-.logo-p{
+.logo-p {
   display: inline;
   font-size: 0.5rem;
 }
@@ -180,7 +180,7 @@ input:checked + .slider:before {
   font-weight: 800;
 }
 
-.follower-p{
+.follower-p {
   letter-spacing: 0.3rem;
   font-weight: 200;
   margin-bottom: 0.4rem;
@@ -194,14 +194,14 @@ input:checked + .slider:before {
 
 .newuser-p {
   display: inline;
-  color:hsl(163, 72%, 41%);
+  color: hsl(163, 72%, 41%);
   font-weight: 600;
   font-size: 0.3rem;
 }
 
-.newuser-p-down{
+.newuser-p-down {
   display: inline;
-  color:hsl(356, 69%, 56%);
+  color: hsl(356, 69%, 56%);
   font-weight: 600;
   font-size: 0.3rem;
 }
@@ -211,15 +211,15 @@ input:checked + .slider:before {
   padding: 10% 10% 5%;
 }
 
-.bottom-row{
-  margin-top:1rem;
+.bottom-row {
+  margin-top: 1rem;
 }
 
-.bottom-card-div{
+.bottom-card-div {
   padding: 0 15px;
 }
 
-.bottom-card{
+.bottom-card {
   background-color: var(--card-bg);
   /* height: 7rem; */
   padding: 8% 12%;
@@ -235,12 +235,12 @@ input:checked + .slider:before {
   font-weight: 600;
 }
 
-.bc-bottom-heading{
-  color:var(--head-color);
+.bc-bottom-heading {
+  color: var(--head-color);
   font-weight: 600;
 }
 
-.bc-bottom-right-div{
+.bc-bottom-right-div {
   padding-top: 0.5rem;
   text-align: right;
 }
@@ -253,78 +253,94 @@ input:checked + .slider:before {
   display: inline-block;
   font-size: 0.3rem;
   font-weight: 600;
-  color:hsl(163, 72%, 41%);
+  color: hsl(163, 72%, 41%);
 }
 
 .bc-bottom-p-down {
   display: inline-block;
   font-size: 0.3rem;
   font-weight: 600;
-  color:hsl(356, 69%, 56%);
+  color: hsl(356, 69%, 56%);
 }
 
-
-.padding-res{
+.padding-res {
   padding-left: 1vw;
-  padding-right:1vw;
+  padding-right: 1vw;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
   background-color: var(--bg-color);
 }
-.attribution a { color: hsl(228, 45%, 44%); }
 
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-@media (max-width:768px){
-  hr{
+@media (max-width:768px) {
+  hr {
     border-top: 1px solid var(--text-color);
     visibility: visible;
   }
-  .mode-div{
+
+  .mode-div {
     padding-top: 0;
   }
 
-  .dashbord-title{
+  .dashbord-title {
     padding-bottom: 0;
   }
 
-  .mode-text{
+  .mode-text {
     text-align: left;
   }
 
   .z-container {
     position: relative;
     z-index: 0;
-    top:0;
-    background-color: var(--bg-color)
+    top: 0;
+    background-color: var(--bg-color);
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .card-div{
+  .card-div {
     margin-bottom: 2rem;
     height: 16rem;
   }
 
-  .back-card{
+  .back-card {
     height: 16.3rem;
   }
 
-  .card{
+  .card {
     height: 16rem;
   }
 
-  .newuser-div{
+
+
+  .newuser-div {
     margin: 12px 0;
   }
+
   .bottom-container {
     padding-top: 2%;
   }
 
-  .bottom-row{
+  .bottom-row {
     margin-top: 0;
   }
 
-  .bottom-card-div{
-margin-top: 16px;
+  .bottom-card-div {
+    margin-top: 16px;
+  }
+
+  .bc-bottom-p {
+    font-size: 0.5rem;
+  }
+
+  .follower-p{
+    font-size: 0.5rem;
   }
 }
