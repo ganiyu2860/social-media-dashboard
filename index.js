@@ -1,4 +1,5 @@
 //jshint esversion:6
+alert("hello");
 var root = $(":root" );
 
 $("input:checkbox").change(function(){
