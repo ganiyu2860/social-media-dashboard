@@ -2,11 +2,11 @@
 alert("hello");
 var root = $(":root" );
 
-$("input:checkbox").change(function(){
+$(document).on("change", "input[name='mode-button']", function () {
   alert("change");
   var checked = $("input").prop("checked");
   //light theme
-  if(checked === true){
+  if(this.checked === true){
     root.css("--bg-color","white");
     root.css('--top-color', "hsl(225, 100%, 98%)");
     root.css("--head-color","hsl(230, 17%, 14%)");
@@ -14,7 +14,7 @@ $("input:checkbox").change(function(){
     root.css("--card-bg","hsl(227, 47%, 96%)");
   }
   // dark theme
-  if(checked === false){
+  if(this.checked === false){
     root.css("--bg-color","hsl(230, 17%, 14%)");
     root.css("--top-color", "hsl(232, 19%, 15%)");
     root.css("--head-color","white");
