@@ -1,14 +1,14 @@
 alert("hello1");
-var root = $(":root");
-var topbg = $(".top-container");
-var darkMode = true;
-
-root.css("--bg-color", "white");
-
-topbg.css("background-color","yellow");
-
-document.getElementsByClassName("top-container")[0].style.backgroundColor = "red";
+// var root = $(":root");
+// var topbg = $(".top-container");
+// var darkMode = true;
+//
+// root.css("--bg-color", "white");
+//
+// topbg.css("background-color","yellow");
 alert("hello2");
+document.getElementsByClassName("top-container")[0].style.backgroundColor = "red";
+alert("hello3");
 // root.css('--top-color', "hsl(225, 100%, 98%)");
 // root.css("--head-color", "hsl(230, 17%, 14%)");
 // root.css("--text-color", "hsl(228, 12%, 44%)");
