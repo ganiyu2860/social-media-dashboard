@@ -4,6 +4,7 @@
   --head-color: white;
   --text-color: hsl(228, 34%, 66%);
   --card-bg: hsl(228, 28%, 20%);
+  --small-size : 0.3rem;
 }
 
 .big-heading {
@@ -196,14 +197,14 @@ input:checked+.slider:before {
   display: inline;
   color: hsl(163, 72%, 41%);
   font-weight: 600;
-  font-size: 0.3rem;
+  font-size: var(--small-size);
 }
 
 .newuser-p-down {
   display: inline;
   color: hsl(356, 69%, 56%);
   font-weight: 600;
-  font-size: 0.3rem;
+  font-size: var(--small-size);
 }
 
 .bottom-container {
@@ -251,14 +252,14 @@ input:checked+.slider:before {
 
 .bc-bottom-p {
   display: inline-block;
-  font-size: 0.3rem;
+  font-size: var(--small-size);
   font-weight: 600;
   color: hsl(163, 72%, 41%);
 }
 
 .bc-bottom-p-down {
   display: inline-block;
-  font-size: 0.3rem;
+  font-size: var(--small-size);
   font-weight: 600;
   color: hsl(356, 69%, 56%);
 }
@@ -279,6 +280,10 @@ input:checked+.slider:before {
 }
 
 @media (max-width:768px) {
+  :root{
+    --small-size: 0.5rem;
+  }
+
   hr {
     border-top: 1px solid var(--text-color);
     visibility: visible;
@@ -318,8 +323,6 @@ input:checked+.slider:before {
     height: 16rem;
   }
 
-
-
   .newuser-div {
     margin: 12px 0;
   }
@@ -334,13 +337,5 @@ input:checked+.slider:before {
 
   .bottom-card-div {
     margin-top: 16px;
-  }
-
-  .bc-bottom-p {
-    font-size: 0.5rem;
-  }
-
-  .follower-p{
-    font-size: 0.5rem;
   }
 }
