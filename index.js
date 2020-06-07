@@ -2,6 +2,12 @@
 alert("hello");
 var root = $(":root" );
 
+$(document).ready(function(){
+    $("div.clickable").on('click', function () {
+        alert('Click');
+    });
+});
+
 $(document).on("change", "input[name='mode-button']", function () {
   alert("change");
   var checked = $("input").prop("checked");
