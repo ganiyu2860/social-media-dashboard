@@ -6,6 +6,10 @@
   --card-bg: hsl(228, 28%, 20%);
   --small-size : 0.3rem;
 }
+button {
+  cursor: pointer;
+}
+
 
 .big-heading {
   font-size: 28px;
