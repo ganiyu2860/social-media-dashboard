@@ -2,6 +2,7 @@
 var root = $(":root" );
 
 $("input:checkbox").change(function(){
+  alert("change");
   var checked = $("input").prop("checked");
   //light theme
   if(checked === true){
