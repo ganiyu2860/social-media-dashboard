@@ -1,10 +1,16 @@
 //jshint esversion:6
-alert("hello");
+alert("hello1");
 var root = $(":root");
 var darkMode = true;
+root.css("--bg-color", "white");
+root.css('--top-color', "hsl(225, 100%, 98%)");
+root.css("--head-color", "hsl(230, 17%, 14%)");
+root.css("--text-color", "hsl(228, 12%, 44%)");
+root.css("--card-bg", "hsl(227, 47%, 96%)");
+
 
 $(document).ready(function() {
-  $("button").on('click touchstart', function() {
+  $("button").on('click tap touchstart', function() {
     alert('Click');
   });
 });
